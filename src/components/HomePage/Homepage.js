@@ -121,14 +121,15 @@ setPrice(e.target.value);              //to take the input
          Price
         </InputLabel>
         <NativeSelect
-          defaultValue={1000}
+          defaultValue={3000}
           inputProps={{
-            name: 'age',
+            name: 'price',
             id: 'uncontrolled-native',
           }}
           value={price}
           onChange={setPriceValue}
         >
+          <option value={3000}>Choose price-range</option>
           <option value={1000}>500-1000</option>
           <option value={1500}>1000-1500</option>
           <option value={2000}>1500-2000</option>
@@ -142,7 +143,7 @@ setPrice(e.target.value);              //to take the input
          Property Type
         </InputLabel>
         <NativeSelect
-          defaultValue={"House"}
+          defaultValue={"Choose"}
           inputProps={{
             name: 'type',
             id: 'uncontrolled-native',
@@ -150,6 +151,7 @@ setPrice(e.target.value);              //to take the input
           value={type}
           onChange={setTypeValue}
         >
+          <option value={"Choose"}>Choose your type</option>
           <option value={"House"}>House</option>
           <option value={"Apartment"}>Apartment</option>
           
